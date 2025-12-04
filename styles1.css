@@ -1,0 +1,248 @@
+    :root {
+    --primary-color: #667eea; 
+    --secondary-color: #764ba2; 
+    --text-color: #333; 
+    --bg-color: #f4f7f9; 
+    --spacing-section: 2.5rem;
+    --spacing-padding: 1.8rem; 
+    --spacing-small: 1rem; 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif; 
+    color: var(--text-color);
+    background-color: white;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 30pt; 
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 24pt;
+    margin-top: var(--spacing-section);
+    margin-bottom: var(--spacing-small);
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 18pt;
+    margin-top: var(--spacing-small);
+    color: var(--primary-color);
+}
+
+p, li, details {
+    font-size: 15pt; 
+    margin-bottom: 1rem;
+}
+
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: var(--spacing-padding) 5%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-left {
+    position: absolute; 
+    top: 1.5rem; 
+    left: 2rem; 
+    width: 170px;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.sidebar {
+    width: 250px;
+    padding: var(--spacing-padding);
+    background-color: var(--bg-color);
+    flex-shrink: 0; 
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar li a:hover {
+    background-color: rgba(102, 126, 234, 0.1);
+    color: var(--primary-color);
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: var(--spacing-padding) 5%;
+}
+
+
+section {
+    padding-bottom: var(--spacing-section);
+}
+
+.sub-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+ol {
+    margin-left: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: var(--spacing-small);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16pt;
+    border-radius: 6px;
+    transition: background-color 0.3s, opacity 0.3s;
+    text-align: center;
+}
+
+.primary-btn { 
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary-btn { 
+    background-color: #5cb85c; 
+    color: white;
+}
+
+.danger-btn { 
+    background-color: #ff6347; 
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.nota {
+    background-color: #fffff0;
+    border-left: 4px solid var(--primary-color);
+    padding: 0.8rem;
+}
+
+
+details {
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    outline: none;
+}
+
+details p {
+    padding-top: 10px;
+    margin-bottom: 0;
+    border-top: 1px dashed #eee;
+    margin-top: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--text-color);
+    color: white;
+    font-size: 12pt;
+    margin-top: var(--spacing-section);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static; 
+        height: auto;
+        border-bottom: 2px solid var(--primary-color);
+    }
+    
+    .sidebar h2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sidebar li {
+        flex: 1 1 45%; 
+        margin: 5px;
+    }
+
+    .content {
+        padding: var(--spacing-padding) 2%;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2 {
+        font-size: 20pt;
+    }
+    
+    .button {
+        display: block; 
+    }
+}

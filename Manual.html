@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual d'Usuari - Sistema de Gestió d'Equips TIC</title>
+    <link rel="stylesheet" href="styles1.css">
+    <img src="img/logotip.png" class="logo-left">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <h1>Sistema de Gestió d'Equips TIC</h1>
+            <p>ElectroTech - Desenvolupat per Aperture Consulting</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <nav class="sidebar">
+            <h2>Índex</h2>
+            <ul>
+                <li><a href="index1.html">Pagina Principal</a></li>
+                <li><a href="#intro">1. Introducció al sistema</a></li>
+                <li><a href="#prestecs">2. Guia de préstecs</a></li>
+                <li><a href="#avaries">3. Guia d'avaries</a></li>
+                <li><a href="#dashboard">4. Dashboard (per David)</a></li>
+                <li><a href="#manteniment">5. Manteniment del sistema</a></li>
+                <li><a href="#faqs">Preguntes Freqüents</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+            </ul>
+        </nav>
+
+        
+        <main class="content">
+
+          
+            <section id="intro">
+                <h2>1. Introducció al sistema</h2>
+                <p>Aquest manual explica el funcionament del nou sistema de gestió d'equips TIC, dissenyat per facilitar la sol·licitud i el seguiment dels dispositius a ElectroTech </p>
+                
+                <details>
+                    <summary>Visió general de funcionalitats</summary>
+                    <p>El sistema permet sol·licitar equips, gestionar retorns, notificar avaries i consultar l'estat dels equips en temps real. És d'ús obligatori per a tot el personal d'ElectroTech que necessiti un equip informàtic prestat.</p>
+                </details>
+            </section>
+
+    
+            <section id="prestecs">
+                <h2>2. Guia de préstecs</h2>
+
+                <div class="sub-section">
+                    <h3>Com sol·licitar un equip</h3>
+                    <ol>
+                        <li>Omple el formulari de sol·licitud.</li>
+                          <img src="img/foto1.png" width="300px">
+                        <li>Espera l'aprovació automàtica del sistema.</li>
+                        <li>Recull l'equip assignat al magatzem.</li>
+                        <li>Retorna'l abans de la data límit.</li>
+                        
+                    </ol>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVdBfX5r0dqSBjNRk7IhqG7oc7G4vzX1qw4ePu9Tz6uqVzqg/viewform?usp=dialog" target="_blank" class="button primary-btn">Sol·licitar un Equip</a>
+                </div>
+
+                <div class="sub-section">
+                    <h3>Com retornar equips</h3>
+                    <ol>
+                        <li>Omple el formulari de retornada.</li>
+                        <li>Indica l'estat de l'equip honestament.</li>
+                        <li>Lliura l'equip al magatzem.</li>
+                    </ol>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY7a7NKRDU2_yJlk-S1DQzeBCYiCnaIgcXicYtZF-PxeG1vA/viewform?usp=dialog"  target="_blank" class="button secondary-btn">Formulari de Retornada</a>
+                    <p class="nota">Límits i restriccions: Només es permeten 2 equips simultàniament.</p>
+                </div>
+            </section>
+
+           
+            <section id="avaries">
+                <h2>3. Guia d'avaries</h2>
+
+                <div class="sub-section">
+                    <h3>Com reportar un problema</h3>
+                    <ol>
+                        <li>Identifica el codi de l'equip (etiqueta adhesiva).</li>
+                        <li>Omple el formulari descrivint el problema.</li>
+                        <li>El departament IT revisarà el cas.</li>
+                        <li>Rebràs informació sobre la reparació.</li>
+                    </ol>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN5AAUwGtgZjCsIW8v4eD5meT0EepvYJa42bMOnXVfUbTS3g/viewform?usp=dialog" target="_blank" class="button danger-btn">Notificar Avaria</a>
+                </div>
+
+                <details>
+                    <summary>Seguiment de reparacions</summary>
+                    <p>En el GoogleSheets en REPARACIONS surt el estat de la reparació del dispositiu.</p>
+                </details>
+            </section>
+            
+          
+            <section id="dashboard">
+                <h2>4. Dashboard (Per David Martín)</h2>
+                <p>Aquesta secció és específica per a usuaris amb permisos de gestió.</p>
+                <details>
+                    <summary>Com interpretar els KPIs</summary>
+                    <p>Els indicadors clau de rendiment (KPIs) mostren la rotació d'equips i la mitjana de temps de reparació. Un KPI alt de rotació indica un ús eficient dels recursos.</p>
+                </details>
+                <details>
+                    <summary>Ús de la pestanya REPARACIONS</summary>
+                    <p>La pestanya 'REPARACIONS' permet veure quins equips estan actualment en reparacio, assignar tècnics i canviar l'estat d'un tiquet de reparació. Això és clau per prendre decisions sobre la compra de nous equips o l'acceleració de reparacions.</p>
+                </details>
+            </section>
+
+           
+            <section id="manteniment">
+                <h2>5. Manteniment del sistema</h2>
+                <details>
+                    <summary>Com afegir nous equips</summary>
+                    <p>Omplint al GoogleSheets a l'apartat de Inventari_General.</p>
+                </details>
+                <details>
+                    <summary>Actualització de dades i resolució de problemes comuns</summary>
+                    <p>Les dades s'actualitzen automàticament. Per a problemes de sincronització, contacteu directament amb David Martín.</p>
+                </details>
+            </section>
+
+
+            <section id="faqs">
+                <h2>Preguntes Freqüents (FAQs)</h2>
+                
+                <details>
+                    <summary>Quants equips puc tenir simultàniament?</summary>
+                    <p>Màxim 2 equips en préstec simultàniament.</p>
+                </details>
+
+                <details>
+                    <summary>Què faig si necessito més temps?</summary>
+                    <p>Contacta amb (david.martin@electrotech.cat) per sol·licitar extensió.</p>
+                </details>
+                
+                <details>
+                    <summary>Com sé si un equip està disponible?</summary>
+                    <p>El sistema valida automàticament la disponibilitat quan sol·licites l'equip.</p>
+                </details>
+                
+                <details>
+                    <summary>Què passa si retorno un equip avariat?</summary>
+                    <p>Has de indicar el seu estat al formulari per posar que esta avariat.</p>
+                </details>
+
+            </section>
+
+          
+            <section id="contacte">
+                <h2>Contacte</h2>
+                <ul>
+                    <li>Responsable IT: David Martín</li>
+                    <li>Email: <a href="mailto:david.martin@electrotech.cat">david.martin@electrotech.cat</a></li>
+                    <li>Telèfon intern: Ext. 301 </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 Aperture Consulting | Sistema desenvolupat per SMIX2CT</p>
+    </footer>
+
+</body>
+</html>
