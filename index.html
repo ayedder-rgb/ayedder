@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1> APERTURE CONSULTING </h1>
+        <img src="img/logotip.png" class="logo-left">
+    </header>
+
+    <main>
+        <nav class="sidebar">
+            <h2>Índex</h2>
+            <a href="Manual.html"> Manual d'Usuari.</a>
+            <a href="#prestecs">Guia de Préstecs</a>
+            <a href="#avaries">Guia d'Avaries</a>
+            <a href="#faqs">Preguntes Freqüents</a>
+            <a href="#contacte">Contacte IT</a>
+        </nav>
+
+        <div class="content">
+            
+            <section id="prestecs">
+                <h2>Guia de Préstecs</h2>
+
+                <div class="sub-section">
+                    <h3>Com sol·licitar un equip</h3>
+                    <ol>
+                        <li>Omple el formulari de sol·licitud </li>
+                        <li>Espera l'aprovació automàtica del sistema </li>
+                        <li>Recull l'equip assignat al magatzem </li>
+                        <li>Retorna'l abans de la data límit </li>
+                    </ol>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVdBfX5r0dqSBjNRk7IhqG7oc7G4vzX1qw4ePu9Tz6uqVzqg/viewform?usp=dialog" target="_blank" class="button primary-button">Sol·licitar Equip (Formulari)</a>
+                </div>
+
+                <div class="sub-section">
+                    <h3>Com retornar un equip</h3>
+                    <ol>
+                        <li>Omple el formulari de retornada </li>
+                        <li>Indica l'estat de l'equip honestament </li>
+                        <li>Lliura l'equip al magatzem </li>
+                    </ol>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY7a7NKRDU2_yJlk-S1DQzeBCYiCnaIgcXicYtZF-PxeG1vA/viewform?usp=dialog" target="_blank" class="button secondary-button">Omplir Formulari de Retornada</a>
+                </div>
+            </section>
+
+            <section id="avaries">
+                <h2>Guia d'Avaries</h2>
+                <div class="sub-section">
+                    <h3>Com reportar un problema</h3>
+                    <ol>
+                        <li>Identifica el codi de l'equip (etiqueta adhesiva). </li>
+                        <li>Omple el formulari descrivint el problema.</li>
+                        <li>El departament IT revisarà el cas.</li>
+                        <li>Rebràs informació sobre la reparació.</li>
+                    </ol>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeN5AAUwGtgZjCsIW8v4eD5meT0EepvYJa42bMOnXVfUbTS3g/viewform?usp=dialog" target="_blank" class="button alert-button">Reportar Avaria</a>
+                </div>
+            </section>
+
+            <section id="faqs">
+                <h2>Preguntes Freqüents</h2>
+   
+                <details class="faq-item">
+                    <summary>1. Quants equips puc tenir simultàniament?</summary>
+                    <p><strong>Resposta:</strong> Màxim 2 equips en préstec simultàniament.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>2. Què faig si necessito més temps?</summary>
+                    <p><strong>Resposta:</strong> Contacta amb david.martin@electrotech.cat per sol·licitar extensió.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>3. Com sé si un equip està disponible?</summary>
+                    <p><strong>Resposta:</strong> El sistema valida automàticament la disponibilitat quan sol·licites.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>4. Què passa si retorno un equip avariat?</summary>
+                    <p><strong>Resposta:</strong> Indica l'estat real al formulari. No hi ha penalització per danys normals d'ús.</p>
+                </details>
+            </section>
+            
+            <section id="contacte">
+                <h2>5. Contacte</h2>
+                <p>Responsable IT: <strong>David Martín</strong></p>
+                <p>Email: <a href="mailto:david.martin@electrotech.cat">david.martin@electrotech.cat</a> </p>
+                <p>Telèfon intern: Ext. 301 </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Aperture Consulting.</p>
+        <p>Sistema desenvolupat per SMIX2CT.</p>
+    </footer>
+</body>
+</html>
